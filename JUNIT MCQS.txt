@@ -1,0 +1,739 @@
+1. What is JUnit primarily used for?
+A. GUI Design
+B. Unit Testing    -> JUnit is a framework used for writing and running unit tests in Java
+C. Database Connectivity
+D. Web Development
+2. Which annotation is used to indicate a test method in JUnit 5?
+A. @TestCase
+B. @RunWith
+C. @Test -> @Test is the standard annotation used to mark a method as a test case
+D. @Before
+3. What does the @BeforeEach annotation do in JUnit 5?
+A. Runs once before all tests
+B. Runs before each test method - >@BeforeEach is used to run setup code before every individual test method
+C. Runs after each test method
+D. Runs only if a test fails
+4. Which of the following methods is used to assert that two values are equal in JUnit?
+A. assertTrue()
+B. assertNotNull()
+C. assertEquals() -> assertEquals() checks whether two values are equal and throws an error if they are not
+D. assertSame()
+5. What is the purpose of the @AfterEach annotation?
+A. Runs after all tests
+B. Runs after each test method @AfterEach is used to execute cleanup code after each test method is run
+C. Runs before each test method
+D. Runs before all tests
+6. What will happen if an assertion fails in a JUnit test?
+A. The program exits
+B. An exception is thrown and the test stops
+C. The test fails -> If an assertion fails, JUnit marks the test as failed and reports it accordingly
+D. Nothing happens
+7. Which of the following JUnit versions introduced the org.junit.jupiter package?
+A. JUnit 3
+B. JUnit 4
+C. JUnit 5  -> JUnit 5 introduced a new architecture with the Jupiter API under the package org.junit.jupiter
+D. JUnit 6
+8. Which annotation runs only once before all tests in a class?
+A. @BeforeEach
+B. @BeforeAll  -> @BeforeAll is used to run code once before any of the test methods in the class are executed
+C. @BeforeClass
+D. @Init
+9. What does the @Disabled annotation do?
+A. Skips the test -> @Disabled tells JUnit to ignore the test method or class; the test will not be executed
+B. Runs the test multiple times
+C. Runs the test in a separate thread
+D. Makes the test private
+10. Which method checks that a condition is true?
+A. assertNull()
+B. assertTrue() -> assertTrue() verifies that a boolean condition is true; otherwise, the test fails
+C. assertEquals()
+D. assertFalse()
+11. Which class contains static assertion methods in JUnit 5?
+A. Assert
+B. Assertions -> The Assertions class in JUnit 5 contains static methods like assertEquals(), assertTrue()
+C. TestCase
+D. JUnitCore
+12. Which of these is NOT a valid JUnit annotation?
+A. @Test
+B. @BeforeEach
+C. @PreTest -> @PreTest is not a valid JUnit annotation. Valid ones include @Test, @BeforeEach, @AfterAll
+D. @AfterAll
+13. What is used to group related test classes in JUnit 5?
+A. @Category
+B. @Nested
+C. @Suite -> @Suite is used to group multiple test classes to be run together as a test suite in JUnit 5
+D. @TestGroup
+14. What does the @AfterAll annotation signify?
+A. Run before each test
+B. Run after each test
+C. Run once after all test methods -> @AfterAll is used for cleanup operations that should run once after all tests in the class
+D. Run only if tests pass
+15. What does assertThrows() do in JUnit 5?
+A. Ignores the test
+B. Expects an exception to be thrown -> assertThrows() verifies that a specific exception is thrown during the execution of a block of code
+C. Prevents exception from being thrown
+D. Catches and logs exception silently
+16. How can you run JUnit tests from the command line?
+A. java TestRunner
+B. Using JUnitCore class -> You can run JUnit tests using the JUnitCore class
+C. javac Test.java
+D. java JUnitMain
+17. Which JUnit annotation is used to provide a custom display name for test methods?
+A. @Display
+B. @DisplayName -> @DisplayName allows you to specify a custom name that will be shown in test reports or logs.
+C. @Name
+D. @ShowName
+18. Which annotation would be used to create parameterized tests in JUnit 5?
+A. @ParameterizedTest -> This allows the same test to run multiple times with different arguments.
+B. @TestParams
+C. @ParamTest
+D. @LoopTest
+19. What is the main benefit of using unit tests?
+A. Increases runtime
+B. Slows down development
+C. Improves code reliability -> Unit testing helps catch bugs early and ensures individual components behave as expected.
+D. Reduces code reusability
+20. In JUnit 5, what is the correct way to assert that a list is not empty?
+A. assertNull(list)
+B. assertEquals(0, list.size())
+C. assertTrue(list == null)
+D. assertFalse(list.isEmpty()) -> This assertion passes if the list is not empty, as expected.
+
+*****************************************************************************************************
+1.Unit Testing    -> JUnit is a framework used for writing and running unit tests in Java.
+
+2.@Test -> @Test is the standard annotation used to mark a method as a test case.
+
+3.Runs before each test method - >@BeforeEach is used to run setup code before every individual test method.
+
+4.assertEquals() -> assertEquals() checks whether two values are equal and throws an error if they are not.
+
+5. Runs after each test method @AfterEach is used to execute cleanup code after each test method is run.
+
+6.C. The test fails -> If an assertion fails, JUnit marks the test as failed and reports it accordingly.
+
+7.JUnit 5  -> JUnit 5 introduced a new architecture with the Jupiter API under the package org.junit.jupiter.
+
+8.@BeforeAll  -> @BeforeAll is used to run code once before any of the test methods in the class are executed.
+
+9.Skips the test -> @Disabled tells JUnit to ignore the test method or class; the test will not be executed.
+
+10.assertTrue() -> assertTrue() verifies that a boolean condition is true; otherwise, the test fails.
+
+11.Assertions -> The Assertions class in JUnit 5 contains static methods like assertEquals(), assertTrue().
+
+12.@PreTest -> @PreTest is not a valid JUnit annotation. Valid ones include @Test, @BeforeEach, @AfterAll.
+
+13.@Suite -> @Suite is used to group multiple test classes to be run together as a test suite in JUnit 5.
+
+14.Run once after all test methods -> @AfterAll is used for cleanup operations that should run once after all tests in the class.
+
+15.Expects an exception to be thrown -> assertThrows() verifies that a specific exception is thrown during the execution of a block of code.
+
+16.Using JUnitCore class -> You can run JUnit tests using the JUnitCore class.
+
+17.@DisplayName -> @DisplayName allows you to specify a custom name that will be shown in test reports or logs.
+
+18.@ParameterizedTest -> This allows the same test to run multiple times with different arguments.
+
+19.Improves code reliability -> Unit testing helps catch bugs early and ensures individual components behave as expected.
+
+20.assertFalse(list.isEmpty()) -> This assertion passes if the list is not empty, as expected.
+
+*****************************************************************************************************
+
+*Explanation --- Selenium*
+
+1\. What is Selenium primarily used for? →  Automation of web applications
+
+*Exp: Selenium opens the real browsers to perform user defined actions like click, inputting the data to test the web apps.*
+
+2\. Which component supports multiple programming languages? → Selenium WebDriver
+
+*Exp: The main Selenium component for writing test scripts.*
+
+3\. NOT a valid WebDriver method? → shutdown()
+
+*Exp: It isn't listed in the methods of the web driver, the remaining ones that are get(), navigate(), quit() present.*
+
+4\. Which programming languages does Selenium support? →  All of the above (Java, Python, C#, JavaScript, Ruby)
+
+*Exp: The official documentation states that it support all the following languages.*
+
+5\. Used to manage multiple browser windows? →  getWindowHandles()
+
+*Exp: The remaining methods doesn't exists. You will switch by using driver.switchTo().window(handle). It returns all the handles in a set string.*
+
+6\. Command to navigate to a web page? → driver.get()
+
+*Exp: get(url) is the method which loads the url and get the info from it.*
+
+7\. Latest version of Selenium architecture? → Selenium 4
+
+*Exp: The 1,2,3 are the older versions and the 4 have extra benefits grid, locators and integration as well.*
+
+8\. Selenium Grid is used for: → Parallel execution of test cases
+
+*Exp: Grid distributes sessions across nodes (browsers/OS) and you can run it in 3 modes.*
+
+9\. What does driver.close() do? → Closes the current browser tab
+
+*Exp: close() closes the focused the current window/tab. The quit() is used to exit from the browser.*
+
+10\. Default timeout for implicitlyWait() if not set? → 0 seconds
+
+*Exp: 0 seconds is the default waittime for the method unless it is explicitly specified otherwise. Selenium fails immediately if element not found.*
+
+11\. Fastest locator strategy? → ID
+
+*Exp: id is typically unique and relates to getElementById, which is highly optimized by browsers for fast finding.*
+
+12\. XPath //input\[@type='submit'] selects? → All input elements with type "submit"
+
+*Exp: It filters for the type for all the input elements.*
+
+13\. Not a valid locator in WebDriver? → By.text
+
+*Exp: By.text doesn’t exist.*
+
+14\. Correct CSS selector usage? → By.cssSelector("button.submit")
+
+*Exp: It is only proper method if we want to use the css selector By.cssSelector(String). It will select from css where button. submit is select.*
+
+15\. Select a link by its text? → By.linkText()
+
+*Exp: It shows only visible text.*
+
+--------------------------------------------------------------------------------------------------------------
+
+*TestNG*
+
+1\. Which annotation is used to execute a method before any test method? -> @BeforeMethod
+
+*Exp: @BeforeMethod runs before each test method in a class.*
+
+2\. What is the default priority of a TestNG test method if not specified? -> 0
+
+*Exp: In TestNG, if no priority is given, the default is 0. Methods with lower priority values execute first.*
+
+3\. Which annotation is used to group multiple test methods together for common setup? -> @BeforeGroups
+
+*Exp: @BeforeGroups runs before the first test method that belongs to specified groups.*
+
+4\. Which XML tag is used to include test classes in the TestNG suite file? -> <class>
+
+*Exp: In testng.xml, <class> is used under <test> to include test classes.*
+
+5\. Which of the following is used to ignore a test case in TestNG? -> @Test(enabled = false)
+
+*Exp: To disable a test in TestNG, we use @Test(enabled=false). @Ignore and @Disable are JUnit annotations, not TestNG.*
+
+6\. Which annotation runs only once before all tests in a suite? -> @BeforeSuite
+
+*Exp: @BeforeSuite executes once before all tests in the suite.*
+
+7\. What does the dependsOnMethods attribute do in a TestNG test? -> Runs the test after specified methods succeed
+
+*Exp: dependsOnMethods makes a test run only if the specified dependent method passes. If the dependent method fails, the test is skipped.*
+
+8\. How can you parameterize a test method in TestNG? -> Using @Parameters annotation
+
+*Exp: @Parameters (used with testng.xml) allows passing values to test methods. It's a simple way of parameterization*
+
+9\. What is the correct return type for a DataProvider method? -> Object\[]\[]
+
+*Exp: @DataProvider method must return a two-dimensional Object\[]\[], where each row represents one set of test data.*
+
+10\. Which annotation is used to run a test before a group of tests? -> @BeforeGroups
+
+*Exp: @BeforeGroups is specifically designed to run before test methods that belong to certain groups.*
+
+11\. What will happen if a test method throws an exception not expected by TestNG? -> It will be marked as failed
+
+*Exp: If an exception occurs that is not declared in expected Exceptions, TestNG treats it as a failure.*
+
+12\. Which feature of TestNG allows running tests concurrently? -> parallel attribute in testng.xml
+
+*Exp: Parallel execution is enabled via parallel="methods", parallel="classes", etc. in testng.xml. There is no @Parallel or multithread=true annotation.*
+
+13\. Which annotation allows providing multiple sets of data to a test method? -> @DataProvider
+
+*Exp: @DataProvider allows data-driven testing by passing multiple sets of data to a test method.*
+
+14\. Which listener is used to generate custom reports in TestNG? -> IReporter
+
+*Exp: IReporter is the TestNG listener interface used for creating custom reports.*
+
+15\. What is the purpose of the alwaysRun=true attribute in TestNG? -> Forces execution even if dependencies fail
+
+*Exp: Setting alwaysRun=true ensures the test executes even if the dependent methods fail or get skipped.* 
+                                            
+--------------------------------------------------------------------------------------------------------------------------------------
+
+*JIRA*
+
+1\. What is JIRA primarily used for? -> Issue tracking and project management
+
+*Exp: JIRA is a tool by Atlassian mainly used for bug tracking, issue tracking, and Agile project management.*
+
+2\. Which company developed JIRA? -> Atlassian
+
+*Exp: Atlassian, an Australian software company, developed JIRA in 2002.*
+
+3\. In JIRA, what is a 'Project'? -> A collection of issues representing a team or product
+
+*Exp: A project is like a container that holds issues, boards, workflows, and settings for a specific team/product.*
+
+4\. Which of the following is NOT an issue type in JIRA by default? -> Feature Film
+
+*Exp: Default issue types include Bug, Task, Story, and Epic — but not Feature Film.*
+
+5\. What does a JIRA Workflow define? -> The lifecycle of an issue
+
+*Exp: Workflow defines steps/statuses (To Do → In Progress → Done) and transitions.*
+
+6\. Which JIRA component allows visual tracking of task progress? -> Kanban/Scrum board
+
+*Exp: Boards (Kanban/Scrum) help visualize and manage task progress.*
+
+7\. Which JIRA board is best suited for continuous delivery? -> Kanban
+
+*Exp: Kanban is continuous, whereas Scrum is time-boxed with sprints.*
+
+8\. What is an Epic in JIRA? -> A large body of work that can be broken down into stories
+
+*Exp: Epic = big feature, broken down into smaller Stories.*
+
+9\. What is the default status when a new issue is created in JIRA? -> To Do (or Open)
+
+*Exp: New issues start as “To Do” or “Open” depending on the workflow configuration.*
+
+10\. In JIRA, a “Story” typically represents: -> A feature or user requirement
+
+*Exp: Stories capture functional requirements from the end-user perspective.*
+
+11\. What is the main function of JIRA Query Language (JQL)? -> To search and filter issues
+
+*Exp: JQL allows advanced queries to filter and find issues efficiently.*
+
+12\. What permission is required to transition issues in JIRA? -> Transition Issues
+
+*Exp: Without this permission, a user cannot move an issue from one status to another.*
+
+13\. Which role can create new projects in JIRA? -> JIRA Administrator
+
+*Exp: Only admins can create new projects; project users/developers cannot.*
+
+14\. Which field is typically used to assign a task to a team member? -> Assignee
+
+*Exp: The “Assignee” field indicates who is responsible for working on the issue.*
+
+15\. Which type of board in JIRA supports sprints? -> Scrum
+
+*Exp: Scrum boards support sprint planning, execution, and review.*
+
+16\. What does the 'Resolution' field in JIRA indicate? -> How the issue was closed
+
+*Exp: Resolution specifies whether an issue was fixed, won’t fix, duplicate, etc.*
+
+17\. Which JIRA feature helps in generating reports like burn-down charts? -> Dashboards
+
+*Exp: Dashboards in JIRA display gadgets like burn-down charts, velocity, etc.*
+
+18\. Who is the “Reporter” in a JIRA issue? -> The person who created the issue
+
+*Exp: Reporter = issue creator, not necessarily the one fixing it.*
+
+19\. Which is a JIRA hosting option? -> JIRA Cloud
+
+*Exp: JIRA can be hosted on Cloud (by Atlassian) or Data Center/Server (self-hosted).*
+
+20\. In Agile, which JIRA issue type is commonly used to capture bugs? -> Bug
+
+*Exp: Bugs are used to report and track defects found during testing.*
+ 
+--------------------------------------------------------------------------------------------------------------------------------------
+
+*Selenium Locators*
+
+1. Which of the following is NOT a valid Selenium locator?
+
+✅ Answer: C) href
+👉 Explanation: href is an attribute of an <a> tag, but Selenium doesn’t have a By.href. Valid locators are id, name, className, xpath, cssSelector, tagName, linkText, partialLinkText.
+
+2. What does the By.id("value") locator do?
+
+✅ Answer: B) Finds an element by its HTML id attribute
+👉 Explanation: By.id("value") matches the element with the given id attribute.
+
+3. Which locator is the fastest and most preferred for locating web elements?
+
+✅ Answer: B) id
+👉 Explanation: id is unique, fast, and most reliable, hence the preferred locator.
+
+4. How do you locate an element with class name in Selenium?
+
+✅ Answer: B) By.className("classValue")
+👉 Explanation: By.className() locates elements with a given class attribute.
+
+5. Which locator is best for locating elements with complex DOM structures?
+
+✅ Answer: D) xpath
+👉 Explanation: XPath can traverse complex and nested DOM structures, unlike name or tagName.
+
+6. What does the locator By.linkText("Click Here") find?
+
+✅ Answer: A) A hyperlink with visible text "Click Here"
+👉 Explanation: By.linkText() specifically finds <a> tags with the exact visible text.
+
+7. Which locator allows partial matching of link text?
+
+✅ Answer: B) By.partialLinkText
+👉 Explanation: By.partialLinkText("Click") matches links with partially matching text.
+
+8. What does the following XPath expression do? //input[@type='text']
+
+✅ Answer: B) Selects all input fields of type text
+👉 Explanation: The predicate [@type='text'] filters <input> elements having type="text".
+
+9. How can you locate an element using a CSS selector in Selenium?
+
+✅ Answer: B) By.cssSelector("cssValue")
+👉 Explanation: CSS selectors can be used with By.cssSelector().
+
+10. Which method is used to locate multiple elements matching a locator?
+
+✅ Answer: B) findElements()
+👉 Explanation: findElement() finds the first match, findElements() returns all matching elements as a list.
+
+11. What will By.tagName("a") locate?
+
+✅ Answer: A) All anchor (<a>) tags
+👉 Explanation: By.tagName("a") finds all <a> tags.
+
+12. Which locator strategy is used in this example?
+
+driver.findElement(By.cssSelector("div#login button.submit"))
+✅ Answer: B) CSS Selector
+👉 Explanation: The syntax (div#login button.submit) is a CSS selector.
+
+13. Which locator works best for buttons with dynamic IDs?
+
+✅ Answer: B) By.xpath with contains()
+👉 Explanation: If IDs are dynamic, XPath functions like contains() or starts-with() are reliable.
+
+14. What does this XPath select: //div[@class='container']/span
+
+✅ Answer: C) span elements that are direct children of divs with class='container'
+👉 Explanation: / means direct child; // would mean descendant.
+
+15. What is the syntax for locating an element by name attribute?
+
+✅ Answer: B) By.name("value")
+👉 Explanation: By.name("value") finds elements using the name attribute.
+
+16. What does By.xpath("//button[text()='Submit']") do?
+
+✅ Answer: C) Finds a button whose visible text is 'Submit'
+👉 Explanation: The [text()='Submit'] matches exact visible text inside a <button>.
+
+17. Which locator should be avoided if performance is critical?
+
+✅ Answer: A) xpath
+👉 Explanation: XPath is slower than id, name, or className.
+
+18. What does the following XPath do? //*[@id='email']
+
+✅ Answer: B) Finds any element with id='email'
+👉 Explanation: * matches any element type with the given attribute.
+
+19. How do you identify an element with multiple classes in CSS?
+
+✅ Answer: A) By.cssSelector(".class1.class2")
+👉 Explanation: Multiple classes are chained in CSS selector (.class1.class2).
+
+20. Which of the following allows you to find an element inside a specific parent in XPath?
+
+✅ Answer: C) //div[@id='main']//input
+👉 Explanation: This finds any <input> inside <div id="main">, regardless of depth.
+✅ Selenium Basics (10 MCQs)
+1. What is Selenium primarily used for?
+👉 c) Automation of web applications
+Explanation: Selenium automates browsers for functional/regression testing of web apps.
+2. Which component of Selenium supports multiple programming languages?
+👉 c) Selenium WebDriver
+Explanation: WebDriver provides APIs for Java, Python, C#, etc. Selenium IDE supports only record/playback.
+3. Which of the following is NOT a valid WebDriver method?
+👉 d) shutdown()
+Explanation: get(), navigate(), and quit() exist. shutdown() is not part of WebDriver.
+4. Which programming languages does Selenium support?
+👉 d) All of the above
+Explanation: Selenium supports Java, Python, C#, Ruby, JavaScript, etc.
+5. Which of the following is used to manage multiple browser windows?
+👉 b) getWindowHandles()
+Explanation: Returns a set of all open window handles. Then we can switch between them.
+6. Which command is used to navigate to a web page in WebDriver?
+👉 d) driver.get()
+Explanation: Opens the given URL in the current browser session.
+7. Which of the following is the latest version of Selenium architecture?
+👉 d) Selenium 4
+Explanation: Selenium 4 introduced W3C WebDriver standard, relative locators, and better Grid.
+8. Selenium Grid is used for:
+👉 b) Parallel execution of test cases
+Explanation: Grid allows running tests on multiple machines/browsers simultaneously.
+9. What does driver.close() do?
+👉 b) Closes the current browser tab
+Explanation: close() closes one tab/window; quit() ends the session and closes all.
+10. What is the default timeout for implicitlyWait() in WebDriver if not set?
+👉 a) 0 seconds
+Explanation: By default, no implicit wait is applied. You must set it explicitly.
+______________
+✅ Locators in Selenium (10 MCQs)
+1. Which locator strategy is the fastest in Selenium?
+👉 b) ID
+Explanation: IDs are unique and accessed quickly by browsers.
+2. What does the XPath //input[@type='submit'] select?
+👉 c) All input elements with type "submit"
+Explanation: //input[@type='submit'] matches all <input> tags with attribute type=submit.
+3. Which of the following is not a valid locator in WebDriver?
+👉 d) By.text
+Explanation: No By.text. Use By.linkText or By.xpath("//*[text()='...']").
+4. What is the correct way to find an element using a CSS selector?
+👉 a) By.cssSelector("button.submit")
+Explanation: Correct syntax is By.cssSelector().
+5. To select a link by its text, you use:
+👉 a) By.linkText()
+Explanation: Finds <a> elements with the exact text.
+6. Which XPath selects all elements with the class 'btn'?
+👉 b) //*[@class='btn']
+Explanation: * means any element with class='btn'.
+7. Which locator is more reliable in dynamic web pages?
+👉 c) CSS Selector
+Explanation: CSS is usually shorter and faster than XPath in dynamic pages.
+8. What is the output of findElements() if no elements are found?
+👉 c) Empty list
+Explanation: findElements() never throws an exception, returns an empty list.
+9. Which XPath syntax is correct for finding an element with text "Login"?
+👉 a) //*[text()='Login']
+Explanation: Matches any element containing exact text "Login".
+10. Which locator would you use for partial text in a hyperlink?
+👉 b) By.partialLinkText()
+Explanation: Finds <a> links containing partial visible text.
+______________
+✅ TestNG (10 MCQs)
+1. What is TestNG used for?
+👉 b) Unit and functional testing
+Explanation: TestNG is a testing framework for unit, integration, functional, and regression tests.
+2. Which annotation is used to define a test method in TestNG?
+👉 c) @Test
+Explanation: @Test marks a method as a test case.
+3. Which file is used to configure TestNG tests?
+👉 c) testng.xml
+Explanation: Defines suites, tests, classes, groups, parallel execution, etc.
+4. Which annotation runs before any test method in a class?
+👉 a) @BeforeMethod
+Explanation: Runs before each @Test method. @BeforeClass runs once per class.
+5. How do you group tests in TestNG?
+👉 b) @Test(groups="smoke")
+Explanation: Groups tests for selective execution.
+6. What does priority in TestNG define?
+👉 b) Order of test method execution
+Explanation: Lower priority runs first. Default = 0.
+7. Which annotation is executed only once before the entire suite runs?
+👉 c) @BeforeSuite
+Explanation: Runs once before all tests in the suite.
+8. How can you skip a test in TestNG?
+👉 a) @Test(enabled=false)
+Explanation: Disables a test without deleting code.
+9. Which annotation is used to run a method after each test method?
+👉 c) @AfterMethod
+Explanation: Runs after every @Test.
+10. TestNG allows parallel execution of tests using:
+👉 b) testng.xml <suite> tag
+Explanation: <suite parallel="tests" thread-count="2"> enables parallel execution.
+
+*.Selenium Grid is a component of the Selenium Suite that enables parallel test execution across multiple machines and browsers.*
+
+Listener Interface	            Description
+ITestListener	                Listens to individual test case events
+ISuiteListener	                Listens to test suite start and finish
+IInvokedMethodListener	        Listens to method-level events
+IAnnotationTransformer	        Modifies annotations at runtime
+IReporter	                    Customizes report generation
+IHookable	                    Intercepts method calls
+
+*In TestNG, a Listener is a powerful feature used to customize and configure the behavior of test execution. Listeners in TestNG allow you to run specific code before, after, or during test execution based on various events.*
+
+ •  What is JIRA primarily used for?
+Answer: B) Project management and issue tracking
+Explanation: JIRA is a tool for tracking tasks, bugs, and project progress, mainly in Agile environments.
+•  Who develops JIRA?
+Answer: C) Atlassian
+Explanation: Atlassian is the company behind JIRA, Confluence, Trello, and other collaboration tools.
+•  In JIRA, what does an 'Issue' typically represent?
+Answer: C) A task or work item
+Explanation: An issue is any work item, such as a bug, story, or task.
+•  What is a 'Project' in JIRA?
+Answer: C) A collection of issues
+Explanation: A project groups related issues under one workspace.
+•  Which of the following is not a default issue type in JIRA?
+Answer: D) Note
+Explanation: Default types include Task, Bug, and Story — “Note” is not one of them.
+•  What is a 'Workflow' in JIRA?
+Answer: B) A defined set of statuses and transitions
+Explanation: Workflow defines the life cycle of an issue and how it moves between statuses.
+•  What JIRA feature allows you to automate repetitive tasks?
+Answer: C) Automation Rules
+Explanation: Automation rules can trigger actions based on specific conditions.
+•  In JIRA Agile (Scrum), what is an 'Epic'?
+Answer: B) A large body of work that can be broken down into stories
+Explanation: An Epic is a high-level goal containing multiple related stories.
+•  What is the purpose of a Sprint in JIRA?
+Answer: B) To complete work in a fixed time-box
+Explanation: Sprints are time-boxed iterations where planned work is completed.
+•  Which of the following is not a valid JIRA project type?
+Answer: C) Bug Tracker
+Explanation: While JIRA can track bugs, there is no built-in “Bug Tracker” project type.
+•  Which field determines who is responsible for an issue?
+Answer: B) Assignee
+Explanation: The assignee is the person responsible for working on and completing the issue.
+•  What is a 'Board' in JIRA?
+Answer: B) A set of issues presented in columns
+Explanation: Boards display issues visually in columns like To Do, In Progress, Done.
+•  What permission allows a user to create new issues?
+Answer: B) Create Issues
+Explanation: This permission is required to add new tasks, bugs, or stories in a project.
+•  Which search language is used in JIRA?
+Answer: C) JQL (JIRA Query Language)
+Explanation: JQL allows advanced searching with customized filters.
+•  What is a 'Story Point' in JIRA Agile?
+Answer: C) A measure of effort to complete a story
+Explanation: Story points estimate the complexity and effort required for a story.
+•  What does the 'Done' status usually represent in a workflow?
+Answer: C) Issue has been completed
+Explanation: “Done” means all planned work for the issue is finished.
+•  Which JIRA component allows grouping related issues under a common goal?
+Answer: B) Epic
+Explanation: An Epic groups multiple related stories/tasks under one goal.
+•  What is the difference between a Kanban and Scrum board in JIRA?
+Answer: C) Scrum uses sprints; Kanban focuses on continuous flow
+Explanation: Scrum is time-boxed, while Kanban supports ongoing delivery without sprints.
+•  Who can change the workflow in JIRA?
+Answer: B) Admin only
+Explanation: Only project or JIRA admins have permission to modify workflows.
+•  What is a Sub-task in JIRA?
+Answer: C) A smaller part of a parent issue
+Explanation: Sub-tasks break down a larger story or task into smaller pieces.
+•  What is the function of 'Components' in a JIRA project?
+Answer: C) Organize issues within a project
+Explanation: Components categorize issues for better organization inside a project.
+•  In a JIRA dashboard, what are 'Gadgets'?
+Answer: C) Visual components to display data
+Explanation: Gadgets are dashboard widgets for metrics, charts, and reports.
+•  What is the role of a 'Reporter' in an issue?
+Answer: B) The user who created the issue
+Explanation: Reporter is the person who logged/created the issue in JIRA.
+•  What is the backlog in JIRA Scrum?
+Answer: C) A list of issues waiting to be worked on
+Explanation: The backlog stores unstarted issues for future sprints.
+•  What is the main purpose of using filters in JIRA?
+Answer: C) To find specific issues based on criteria
+Explanation: Filters help quickly locate issues matching given conditions.
+
+1.	 Which of the following is NOT one of the four Agile values?
+Answer: B – Contract negotiation over customer collaboration
+Explain: Agile values customer collaboration over contract negotiation.
+2.	Agile principles promote:
+Answer: C – Customer collaboration throughout the project
+Explain: Agile emphasizes continuous customer involvement.
+3.	According to the Agile Manifesto, what is valued more?
+Answer: C – Working software over comprehensive documentation
+Explain: Delivering usable software is more important than excessive documentation.
+4.	Which principle emphasizes sustainable development?
+Answer: C – Agile processes promote sustainable development
+Explain: Teams should work at a pace they can maintain indefinitely.
+5.	Which best describes Agile documentation?
+Answer: D – Just enough documentation to meet the need
+Explain: Agile keeps documentation minimal but sufficient.
+6.	What is the maximum timebox for a Sprint?
+Answer: C – 4 weeks
+Explain: Sprints are 1–4 weeks long, never more.
+7.	Who owns the Product Backlog?
+Answer: B – Product Owner
+Explain: The Product Owner manages and prioritizes the backlog.
+8.	Purpose of the Sprint Review?
+Answer: B – Inspect increment and adapt Product Backlog
+Explain: It’s a feedback and adaptation event.
+9.	Which Scrum event is time-boxed to 15 minutes?
+Answer: C – Daily Scrum
+Explain: The daily stand-up is limited to 15 minutes.
+10.	If work isn’t finished by Sprint end?
+Answer: C – Reviewed and re-estimated in next Sprint
+Explain: Unfinished items are carried forward after reassessment.
+11.	Who ensures Scrum is understood and enacted?
+Answer: B – Scrum Master
+Explain: Scrum Master coaches the team in Scrum practices.
+12.	Who is responsible for maximizing product value?
+Answer: C – Product Owner
+Explain: They decide what to build for maximum ROI.
+13.	Which is NOT a Scrum role?
+Answer: C – Team Lead
+Explain: Scrum roles are Product Owner, Scrum Master, and Developers.
+14.	Who facilitates Scrum events as needed?
+Answer: C – Scrum Master
+Explain: They guide and facilitate Scrum ceremonies.
+15.	The Developers are responsible for:
+Answer: B – Creating the Sprint Backlog
+Explain: Developers select and plan the work for the Sprint.
+16.	What is a user story?
+Answer: C – Requirement from user’s perspective
+Explain: Captures needs in plain language like “As a user, I want…”.
+17.	Velocity measures:
+Answer: C – Work completed by the team per sprint
+Explain: It’s a measure of delivery capacity.
+18.	Which methodology uses Kanban boards?
+Answer: D – Kanban
+Explain: Kanban visualizes workflow on boards.
+
+JIRA - JIRA is a tool for tracking tasks, bugs, and project progress, mainly in Agile environments.
+
+Automation Rules - Helps to automate the repetitive tasks.
+
+Scrum and Kanban - Scrum uses sprints; Kanban focuses on continuous flow
+
+Issue – The fundamental unit of work in JIRA (bug, task, story, etc.).
+
+Project – A collection of issues grouped together for a specific goal, team, or product.
+
+Epic – A large body of work that can be broken down into multiple stories or tasks.
+
+Story – A user-centric requirement or functionality request.
+
+Task – A piece of work that needs to be completed, usually technical or supportive.
+
+Bug – An issue type representing a defect or error in the system.
+
+Sub-task – A smaller piece of work that is part of a parent issue (story, task, or bug).
+
+Workflow – The sequence of steps (statuses and transitions) an issue follows during its lifecycle.
+
+Board – A visual display (Kanban or Scrum) to track and manage issues.
+
+Sprint – A fixed time period in which a team works to complete planned issues.
+
+Backlog – A prioritized list of pending issues to be worked on in future sprints.
+
+Assignee – The person responsible for completing an issue.
+
+Reporter – The person who created or reported the issue.
+
+Priority – Indicates the urgency/importance of an issue (e.g., High, Medium, Low).
+
+Component – A subdivision of a project to group issues by module or functionality.
+
+Resolution – The final outcome of an issue (e.g., Fixed, Won’t Fix, Duplicate).
+
+Dashboard – A customizable view with gadgets to monitor issues, progress, and reports.
+
+Velocity - The amount of work a team can complete during a single sprint.
+ 
